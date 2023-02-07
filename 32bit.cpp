@@ -15,6 +15,7 @@ int main()
     result += i;
 }
  
+  // Loop through the range from 0 to 5*10^9
     for (int i = 0; i < 500000000; i++) 
     {
   // Calculate the product of i and the current value of result
