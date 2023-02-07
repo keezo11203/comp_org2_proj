@@ -21,4 +21,10 @@ int main()
   // Calculate the product of i and the current value of result
         result *= i;
     }
-    
+    for (int i = 0; i < 2000000000; i++) 
+    {
+        if (i != 0) 
+      {
+        result /= i;
+      }
+    }
