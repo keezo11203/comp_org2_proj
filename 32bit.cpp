@@ -14,3 +14,10 @@ int main()
  // Add the current value of i to the result
     result += i;
 }
+ 
+    for (int i = 0; i < 500000000; i++) 
+    {
+  // Calculate the product of i and the current value of result
+        result *= i;
+    }
+    
