@@ -23,3 +23,7 @@ for (int i = 0; i < 500000000; i++)
 {
     result /= i;
 }
+  
+// Stop timer
+std::chrono::high_resolution_clock::time_point end_time = std::chrono::high_resolution_clock::now();
+
