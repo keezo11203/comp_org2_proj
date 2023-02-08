@@ -7,3 +7,10 @@ int main() {
     
     // allocate an array of ints
     int *arr = new int[5 * 10000000];
+    
+ // loop to fill and access the array
+    for (int i = 0; i < 5 * 10000000; ++i) 
+    {
+        arr[i] = i;
+        int x = arr[i];
+    }
