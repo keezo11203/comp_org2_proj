@@ -1,7 +1,8 @@
 #include <iostream>
 #include <chrono>
 
-int main() {
+int main() 
+{
     // record the starting time
     std::chrono::high_resolution_clock::time_point start_time = std::chrono::high_resolution_clock::now();
     
@@ -23,3 +24,10 @@ int main() {
 
     // print the execution time
     std::cout << "Memory benchmark execution time: " << execution_time << " seconds" << std::endl;
+
+    // deallocate the array
+    delete[] arr;
+
+    // return 0 to indicate success
+    return 0;
+}
