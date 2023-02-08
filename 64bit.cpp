@@ -27,3 +27,8 @@ for (int i = 0; i < 500000000; i++)
 // Stop timer
 std::chrono::high_resolution_clock::time_point end_time = std::chrono::high_resolution_clock::now();
 
+std::chrono::duration<double> execution_time = end_time - start_time;
+std::cout << "64 bit floating point execution time: " << execution_time.count() << " seconds" << std::endl;
+
+return 0;
+}
