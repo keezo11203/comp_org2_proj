@@ -17,3 +17,9 @@ int main() {
 
     // record the end time
     std::chrono::high_resolution_clock::time_point end_time = std::chrono::high_resolution_clock::now();
+    
+    // calculate the execution time in seconds
+    double execution_time = std::chrono::duration_cast<std::chrono::microseconds>(end_time - start_time).count() / 1000000.0;
+
+    // print the execution time
+    std::cout << "Memory benchmark execution time: " << execution_time << " seconds" << std::endl;
