@@ -30,3 +30,9 @@ write_file("words.txt");
 read_file("words.txt");
 
 std::chrono::high_resolution_clock::time_point end = std::chrono::high_resolution_clock::now();
+
+std::chrono::microseconds difference = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
+std::cout << "Hardrive Benchmark 1 time: " << difference.count() / 1000000.0 << " seconds" << std::endl;
+
+return 0;
+}
