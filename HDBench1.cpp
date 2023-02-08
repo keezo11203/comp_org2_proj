@@ -25,3 +25,6 @@ void write_file(const std::string &filename)
 }
 
 std::chrono::high_resolution_clock::time_point start = std::chrono::high_resolution_clock::now();
+
+write_file("words.txt");
+read_file("words.txt");
