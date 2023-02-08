@@ -23,3 +23,5 @@ void write_file(const std::string &filename)
         file.write("0", 100);
     }
 }
+
+std::chrono::high_resolution_clock::time_point start = std::chrono::high_resolution_clock::now();
