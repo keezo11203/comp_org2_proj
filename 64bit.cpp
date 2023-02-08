@@ -13,3 +13,8 @@ for (int i = 0; i < 1000000000; i++)
 {
     result += i;
 }
+  
+for (int i = 0; i < 500000000; i++) 
+{
+    result *= i;
+}
