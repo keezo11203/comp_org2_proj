@@ -14,3 +14,6 @@ int main() {
         arr[i] = i;
         int x = arr[i];
     }
+
+    // record the end time
+    std::chrono::high_resolution_clock::time_point end_time = std::chrono::high_resolution_clock::now();
