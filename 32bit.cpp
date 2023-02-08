@@ -28,3 +28,11 @@ int main()
         result /= i;
       }
     }
+// Stop timer
+    std::chrono::high_resolution_clock::time_point end_time = std::chrono::high_resolution_clock::now();
+
+    std::chrono::microseconds execution_time = std::chrono::duration_cast<std::chrono::microseconds>(end_time - start_time);
+    std::cout << "32 bit execution time: " << execution_time.count() << " microseconds" << std::endl;
+
+    return 0;
+}
