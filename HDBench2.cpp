@@ -21,3 +21,6 @@ int main()
         f_in.read(x, 10000);
     }
     f_in.close();
+    
+// Stop timer
+std::chrono::high_resolution_clock::time_point end_time = std::chrono::high_resolution_clock::now();
