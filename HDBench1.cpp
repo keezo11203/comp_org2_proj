@@ -28,3 +28,5 @@ std::chrono::high_resolution_clock::time_point start = std::chrono::high_resolut
 
 write_file("words.txt");
 read_file("words.txt");
+
+std::chrono::high_resolution_clock::time_point end = std::chrono::high_resolution_clock::now();
