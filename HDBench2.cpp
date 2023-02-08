@@ -14,3 +14,10 @@ int main()
         f.write("0", 10000);
     }
     f.close();
+    
+    std::ifstream f_in("file.txt", std::ios::binary);
+    char x[10000];
+    for (int i = 0; i < 1000000000 / 10000; i++) {
+        f_in.read(x, 10000);
+    }
+    f_in.close();
